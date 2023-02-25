@@ -1,0 +1,81 @@
+:root {
+  --ff-primary: "Outfit", sans-serif;
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-ligh-gray: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 55%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set root font 1rem = 10px  */
+html {
+  font-size: 62.5%;
+}
+
+/* Set core body defaults */
+body {
+  height: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+  background-color: var(--clr-ligh-gray);
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+    padding: 10em;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    padding: 10em 5em;
+  }
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--clr-dark-blue);
+  padding: 1em;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--clr-grayish-blue);
+  padding: 0 1em 1.5em 1em;
+}
+
+.card {
+  background-color: var(--clr-white);
+  max-width: 30rem;
+  width: 30rem;
+  padding: 1.3rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.qr {
+  border-radius: 1.4rem;
+}
